@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/a46ceab155.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="navigation" href="membership.html">Memberships</a>
+        <a class="navigation" href="users.html">Users</a>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="page-header">
+          <div class="page-navigation">
+            <div>
+              <h1 class="title">User Management</h1>
+            </div>
+            <div>
+              <a class="add-new" href="new-users.html"> + New User</a>
+            </div>
+          </div>
+          <h3 class="order-by">
+            Sorting By name <span class="current-direction">ASC</span>
+            <i class="fas fa-sort"></i>
+          </h3>
+          <div class="user-list"></div>
+        </div>
+      </div>
+      <script type="module" src="users.js"></script>
+    </main>
+    <footer>Copyrigh Ⓒ Membership manager</footer>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/a46ceab155.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="navigation" href="membership.html">Memberships</a>
+        <a class="navigation" href="users.html">Users</a>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="page-header">
+          <h1 class="title">Create User</h1>
+          <div class="register">
+            <form id="add-user">
+              <div class="split-inputs">
+                <div class="split-side">
+                  <legend for="name">
+                    First Name <i class="fas fa-asterisk"></i>
+                  </legend>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="First Name"
+                    required
+                  />
+                  <legend for="email">
+                    Email Address <i class="fas fa-asterisk"></i>
+                  </legend>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                  <legend for="select">Change Membership</legend>
+
+                  <select id="service-id" name="membership-options"></select>
+                </div>
+                <div class="split-side">
+                  <legend for="surname">
+                    Last Name <i class="fas fa-asterisk"></i>
+                  </legend>
+                  <input
+                    type="text"
+                    id="surname"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="actions">
+                <button class="cancel" id="cancel-button" type="button">
+                  Cancel
+                </button>
+                <button class="submit-btn" type="submit">New User</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>Copyrigh Ⓒ Membership manager</footer>
+
+    <script type="module" src="new-users.js"></script>
+  </body>
+</html>
